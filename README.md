@@ -1,4 +1,4 @@
-# LLM-Powered Fraud Detection with FAISS
+# LLM-Powered Fraud Detection 
 
 🚀 **Fraud Detection Using FAISS & Transformer-Based Embeddings**  
 
@@ -7,9 +7,9 @@
 ## 📖 Project Overview
 This project implements a **fraud detection system** using **LLM-based embeddings, FAISS for similarity search, and anomaly detection techniques**.  
 
-✔ **Generates a synthetic transaction dataset** (100M+ records)  
+✔ **Generates a synthetic transaction dataset** (1M records)  
 ✔ **Preprocesses & tokenizes descriptions using SentencePiece**  
-✔ **Generates embeddings with Word2Vec, FastText & AutoEncoders**  
+✔ **Generates embeddings with Word2Vec & AutoEncoders**  
 ✔ **Indexes embeddings into FAISS** for **fast similarity search**  
 ✔ **Detects anomalies based on similarity scores to flag fraud**  
 
@@ -18,7 +18,7 @@ This project implements a **fraud detection system** using **LLM-based embedding
 ## 📌 Steps Implemented in Colab Notebook
 
 ### 1️⃣ Generate a Synthetic Transaction Dataset
-Simulates **100M+ transactions** with:  
+Simulates **1M transactions** with:  
 - `user_id`, `age`, `credit_score`, `amount`, `merchant`, `location`, `IP`, `device_fingerprint`, `fraud_flag`  
 - **Fraud cases (2%) added to simulate real-world fraud patterns**  
 
@@ -41,15 +41,14 @@ python preprocess_data.py
 ---
 
 ### 3️⃣ Generate Text-Based Embeddings (Word2Vec & FastText)
-✔ **Trains Word2Vec & FastText on tokenized descriptions**  
+✔ **Trains Word2Vec  on tokenized descriptions**  
 ✔ **Generates vector embeddings for each transaction**  
 
 ```bash
 python train_embeddings.py
 ```
 **Outputs:**  
-- `word2vec.model` (Word2Vec embeddings)  
-- `fasttext.model` (FastText embeddings)  
+- `word2vec.model` (Word2Vec embeddings)   
 - `word2vec_transactions.csv` (Dataset with embeddings)
 
 ---
@@ -92,13 +91,8 @@ python detect_anomalies.py
 
 ## 📌 Running the Entire Project in Colab
 1️⃣ Open **Google Colab**  
-2️⃣ Upload the notebook (`fraud_detection.ipynb`)  
+2️⃣ Upload the notebook (`XNL_21BAI1341_LLM3.ipynb`)  
 3️⃣ Run all cells **step by step**
 
 ---
 
-## 📌 Install Requirements
-To install all required dependencies, run:  
-```bash
-pip install -r requirements.txt
-```
